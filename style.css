@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial;
+}
+
+@font-face {
+    font-family:Norse-Bold;
+    src: url(font/Norse-Bold.woff) format(woff),
+    url(font/Norse-Bold.woff2) format(woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body{
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    width: 40vw;
+    height: 100vh;
+    background-image: url(asset/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    width: 100%;
+    height: 180px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.logo-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logo-text img{
+    height: 150px;
+    width: auto;
+}
+
+.text{
+    font-family: Norse-Bold;
+    font-size: 6em;
+    color: white;
+}
+
+.header{
+    color: #1b1b1b;
+    max-width: calc(100% - 6em);
+    margin: 7em 0 0 3em;
+}
+
+.form-side{
+    background-color: #f0f0f0;
+}
+
+.title-header{
+    font-size: 1.4em;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.sign{
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.want {
+  margin: 1em 0 3em 0;
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.form-content{
+    background: white;
+    padding: 1rem 0 2rem 3rem;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 2rem;
+}
+
+.form-header{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1b1b1b;
+}
+
+.form-row{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-group{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.form-group label{
+    font-size: 0.8em;
+    font-weight: bold;
+    color:rgb(51, 51, 59);
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+}
+
+.form-group input{
+    padding: 0.7rem;
+    width: 85%;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group input:focus{
+    outline: 2px solid #70a9ff;
+}
+
+.form-group input[type="password"],
+.form-group input[type="password"]:invalid
+{
+    outline: 2px solid rgb(238, 45, 45);
+}
+
+.form-group input[type="password"]:valid{
+    outline: 2px solid #596D48;
+}
+
+button{
+    background-color: #596D48;
+    padding: 20px;
+    margin-left: 3rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(78, 78, 78);
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    width: 15em;
+    margin-bottom: 2rem;
+}
+
+.login-link{
+    margin-left: 3rem;
+    font-size: 1.2rem;
+}
+
+.login-link a{
+    color: #596D48;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 1281px){
+
+    .sidebar{
+        height: 100vh;
+    }
+    .form-row {
+              flex-direction: column;
+          }
+          
+          .form-group {
+              margin-bottom: 1rem;
+          }
+          
+          .form-group input {
+              width: 50em;
+          }
+}
+
+
