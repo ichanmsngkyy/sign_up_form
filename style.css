@@ -173,6 +173,7 @@ button{
     font-weight: bold;
     width: 15em;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 
 .login-link{

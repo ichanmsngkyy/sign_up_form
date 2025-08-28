@@ -29,43 +29,47 @@
         <div class="sign">Sign up now to get started.</div>
         <div class="want">You know you want to.</div>
       </div>
-      <form class="form-content">
-        <span class="form-header">Let's do this!</span>
+      <form>
+        <div class="form-content">
+          <span class="form-header">Let's do this!</span>
 
-        <div class="form-row">
-          <div class="form-group">
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name" required />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
           </div>
-          <div class="form-group">
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="last-name" required />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="mail">EMAIL</label>
+              <input type="email" id="mail" name="mail" required />
+            </div>
+            <div class="form-group">
+              <label for="number">PHONE NUMBER</label>
+              <input type="tel" id="number" name="number" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="pass">PASSWORD</label>
+              <input type="password" id="pass" name="pass" required />
+            </div>
+            <div class="form-group">
+              <label for="confirm">CONFIRM PASSWORD</label>
+              <input type="password" id="confirm" name="confirm" required />
+            </div>
           </div>
         </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="mail">EMAIL</label>
-            <input type="email" id="mail" name="mail" required />
-          </div>
-          <div class="form-group">
-            <label for="number">PHONE NUMBER</label>
-            <input type="tel" id="number" name="number" required />
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="pass">PASSWORD</label>
-            <input type="password" id="pass" name="pass" required />
-          </div>
-          <div class="form-group">
-            <label for="confirm">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm" name="confirm" required />
-          </div>
+        <div class="button">
+          <button>Create Account</button>
         </div>
       </form>
-      <button type="submit">Create Account</button>
 
       <div class="login-link">
         <p>Already have an account? <a href="index.html">Log in</a></p>
